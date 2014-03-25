@@ -21,6 +21,7 @@
 		C3928D7518E11E0C007693BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3928D5718E11E0C007693BF /* UIKit.framework */; };
 		C3928D7D18E11E0C007693BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3928D7B18E11E0C007693BF /* InfoPlist.strings */; };
 		C3928D7F18E11E0C007693BF /* MeetMeUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3928D7E18E11E0C007693BF /* MeetMeUpTests.m */; };
+		C3928D8A18E1B042007693BF /* FLXEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3928D8918E1B042007693BF /* FLXEventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C3928D7A18E11E0C007693BF /* MeetMeUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetMeUpTests-Info.plist"; sourceTree = "<group>"; };
 		C3928D7C18E11E0C007693BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3928D7E18E11E0C007693BF /* MeetMeUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetMeUpTests.m; sourceTree = "<group>"; };
+		C3928D8818E1B042007693BF /* FLXEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXEventViewController.h; sourceTree = "<group>"; };
+		C3928D8918E1B042007693BF /* FLXEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXEventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				C3928D6518E11E0C007693BF /* Main.storyboard */,
 				C3928D6818E11E0C007693BF /* FLXViewController.h */,
 				C3928D6918E11E0C007693BF /* FLXViewController.m */,
+				C3928D8818E1B042007693BF /* FLXEventViewController.h */,
+				C3928D8918E1B042007693BF /* FLXEventViewController.m */,
 				C3928D6B18E11E0C007693BF /* Images.xcassets */,
 				C3928D5A18E11E0C007693BF /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			files = (
 				C3928D6018E11E0C007693BF /* main.m in Sources */,
 				C3928D6418E11E0C007693BF /* FLXAppDelegate.m in Sources */,
+				C3928D8A18E1B042007693BF /* FLXEventViewController.m in Sources */,
 				C3928D6A18E11E0C007693BF /* FLXViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

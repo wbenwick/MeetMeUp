@@ -7,6 +7,7 @@
 //
 
 #import "FLXViewController.h"
+#import "FLXEventViewController.h"
 
 @interface FLXViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -62,6 +63,25 @@
     
     return cell;
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    FLXEventViewController * eventView = [segue destinationViewController];
+    NSIndexPath *indexPath = [myTableView indexPathForSelectedRow];
+
+    NSDictionary *myEvent = myEvents[indexPath.row];
+//    NSURL* url = [NSURL URLWithString:myEvent[@"title"]];
+    
+    eventView.title = myEvent[@"group"][@"name"];
+    eventView.eventHostedByString= [NSString stringWithFormat:@"%@",[myEvent objectForKey:@"venue"][@"name"]];
+    eventView.eventRSVPString = [myEvent objectForKey:@"yes_rsvp_count"];
+    eventView.eventDescriptionString = myEvent[@"name"];
+//    eventView.eventURLString = myEvent[@"event_url"];
+
+//    [eventView.eventWebView loadHTMLString:myEvent[@"description"] baseURL:nil];
+
+    NSLog(@"%@", [myEvent objectForKey:@"venue"][@"name"]);
 }
 
 @end
