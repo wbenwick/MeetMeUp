@@ -119,6 +119,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aYE-Aq-pHd" kind="push" id="ZBv-Ax-hLq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RSVP's:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr0-df-rHX">
                                 <rect key="frame" x="151" y="162" width="63" height="21"/>
@@ -153,6 +156,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIw-yz-sNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547" y="-563"/>
+        </scene>
+        <!--Event Web View Controller-->
+        <scene sceneID="8Vy-qp-5BI">
+            <objects>
+                <viewController id="aYE-Aq-pHd" customClass="FLXEventWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="puE-Oh-6dm"/>
+                        <viewControllerLayoutGuide type="bottom" id="84C-Ou-b7B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mWX-ra-8mi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbz-m3-9Ke">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZWJ-3D-Qu0"/>
+                    <connections>
+                        <outlet property="eventWebView" destination="Sbz-m3-9Ke" id="Iv3-S5-jfp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2B-b2-dX4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="-738"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hQo-3E-5hv">

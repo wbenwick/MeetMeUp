@@ -22,6 +22,7 @@
 		C3928D7D18E11E0C007693BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3928D7B18E11E0C007693BF /* InfoPlist.strings */; };
 		C3928D7F18E11E0C007693BF /* MeetMeUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3928D7E18E11E0C007693BF /* MeetMeUpTests.m */; };
 		C3928D8A18E1B042007693BF /* FLXEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3928D8918E1B042007693BF /* FLXEventViewController.m */; };
+		C3928D8D18E1D637007693BF /* FLXEventWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3928D8C18E1D637007693BF /* FLXEventWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		C3928D7E18E11E0C007693BF /* MeetMeUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetMeUpTests.m; sourceTree = "<group>"; };
 		C3928D8818E1B042007693BF /* FLXEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXEventViewController.h; sourceTree = "<group>"; };
 		C3928D8918E1B042007693BF /* FLXEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXEventViewController.m; sourceTree = "<group>"; };
+		C3928D8B18E1D637007693BF /* FLXEventWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLXEventWebViewController.h; sourceTree = "<group>"; };
+		C3928D8C18E1D637007693BF /* FLXEventWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLXEventWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				C3928D6218E11E0C007693BF /* FLXAppDelegate.h */,
 				C3928D6318E11E0C007693BF /* FLXAppDelegate.m */,
 				C3928D6518E11E0C007693BF /* Main.storyboard */,
+				C3928D8B18E1D637007693BF /* FLXEventWebViewController.h */,
+				C3928D8C18E1D637007693BF /* FLXEventWebViewController.m */,
 				C3928D6818E11E0C007693BF /* FLXViewController.h */,
 				C3928D6918E11E0C007693BF /* FLXViewController.m */,
 				C3928D8818E1B042007693BF /* FLXEventViewController.h */,
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3928D6018E11E0C007693BF /* main.m in Sources */,
+				C3928D8D18E1D637007693BF /* FLXEventWebViewController.m in Sources */,
 				C3928D6418E11E0C007693BF /* FLXAppDelegate.m in Sources */,
 				C3928D8A18E1B042007693BF /* FLXEventViewController.m in Sources */,
 				C3928D6A18E11E0C007693BF /* FLXViewController.m in Sources */,

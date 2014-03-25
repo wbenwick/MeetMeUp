@@ -1,28 +1,21 @@
 //
-//  FLXEventViewController.m
+//  FLXEventWebViewController.m
 //  MeetMeUp
 //
 //  Created by Administrator on 3/25/14.
 //  Copyright (c) 2014 FileLogix. All rights reserved.
 //
 
-#import "FLXEventViewController.h"
 #import "FLXEventWebViewController.h"
 
-@interface FLXEventViewController () {
+@interface FLXEventWebViewController () {
     
-    __weak IBOutlet UIButton *eventButton;
     __weak IBOutlet UIWebView *eventWebView;
-    __weak IBOutlet UITextView *eventDescription;
-    __weak IBOutlet UITextField *eventRSVP;
-    __weak IBOutlet UITextField *eventHostedBy;
-    __weak IBOutlet NSString *eventURL;
-    
 }
 
 @end
 
-@implementation FLXEventViewController
+@implementation FLXEventWebViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,12 +29,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
-    eventDescription.text = self.eventDescriptionString;
-    eventRSVP.text = [NSString stringWithFormat:@"%@",  self.eventRSVPString];
-    eventHostedBy.text = self.eventHostedByString;
-    [eventWebView loadHTMLString:self.eventWebViewString baseURL:nil];
-   
+    NSURL * url = [NSURL URLWithString:self.eventURL];
+    
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    [eventWebView loadRequest:request];
     
 }
 
@@ -61,14 +55,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-    FLXEventWebViewController * webView = [segue destinationViewController];
-    
-    webView.eventURL = self.eventURLString;
-    
-}
 
 @end

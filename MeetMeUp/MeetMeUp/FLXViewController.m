@@ -8,6 +8,7 @@
 
 #import "FLXViewController.h"
 #import "FLXEventViewController.h"
+#import "FLXEventWebViewController.h"
 
 @interface FLXViewController () <UITableViewDelegate, UITableViewDataSource>
 {
