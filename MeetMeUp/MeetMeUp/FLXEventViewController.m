@@ -19,8 +19,6 @@
     
 }
 
-
-
 @end
 
 @implementation FLXEventViewController
@@ -41,6 +39,8 @@
     eventDescription.text = self.eventDescriptionString;
     eventRSVP.text = [NSString stringWithFormat:@"%@",  self.eventRSVPString];
     eventHostedBy.text = self.eventHostedByString;
+    [eventWebView loadHTMLString:self.eventWebViewString baseURL:nil];
+   
     
 }
 

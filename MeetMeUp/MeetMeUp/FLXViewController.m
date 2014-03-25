@@ -77,9 +77,8 @@
     eventView.eventHostedByString= [NSString stringWithFormat:@"%@",[myEvent objectForKey:@"venue"][@"name"]];
     eventView.eventRSVPString = [myEvent objectForKey:@"yes_rsvp_count"];
     eventView.eventDescriptionString = myEvent[@"name"];
-//    eventView.eventURLString = myEvent[@"event_url"];
-
-//    [eventView.eventWebView loadHTMLString:myEvent[@"description"] baseURL:nil];
+    eventView.eventURLString = myEvent[@"event_url"];
+    eventView.eventWebViewString = myEvent[@"description"];
 
     NSLog(@"%@", [myEvent objectForKey:@"venue"][@"name"]);
 }
